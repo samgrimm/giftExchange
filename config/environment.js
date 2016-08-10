@@ -3,9 +3,19 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'gift',
+    podModulePrefix: 'gift/features',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
+    firebase: {
+      apiKey: "AIzaSyAbtb8WXMEJgrKNVEpCjmV7cEnCtZAm9As",
+      authDomain: "gift-7dbbf.firebaseapp.com",
+      databaseURL: "https://gift-7dbbf.firebaseio.com",
+      storageBucket: "",
+    },
+    torii: {
+      sessionServiceName: 'session'
+    },
     EmberENV: {
       FEATURES: {
         // Here you can enable experimental features on an ember canary build

@@ -1,0 +1,5 @@
+
+{{input value=email placeholder='email'}}
+{{input value=password type='password' placeholder='password'}}
+<button class="btn btn-primary auth-as-password" {{action "login" 'password' email password }}>Login</button>
+<button class="btn btn-primary auth-as-twitter" {{action "login" 'twitter'  }}>Login with Twitter</button>

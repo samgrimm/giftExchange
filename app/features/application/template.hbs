@@ -1,0 +1,19 @@
+{{#paper-toolbar}}
+<div class="md-toolbar-tools">
+  {{#link-to 'index'}}{{#paper-button }}SecretSanta{{/paper-button}}{{/link-to}}
+  {{#if session.isAuthenticated}}
+    {{#link-to 'giftExchange'}}{{#paper-button }}Gift Exchanges I manage{{/paper-button}}{{/link-to}}
+    {{#link-to 'giftExchange'}}{{#paper-button }}Gift Exchanges I am a part of{{/paper-button}}{{/link-to}}
+  {{/if}}
+  <div class="paper-right">
+  {{#unless session.isAuthenticated}}
+    {{#link-to 'login'}}{{#paper-button }}Login{{/paper-button}}{{/link-to}}
+    {{#link-to 'signup'}}{{#paper-button }}Singup{{/paper-button}}{{/link-to}}
+  {{else}}
+  <li {{action 'logout' }}>Logout</li>
+  {{/unless}}
+  </div>
+</div>
+{{/paper-toolbar}}
+
+    {{outlet}}
