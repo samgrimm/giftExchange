@@ -10,4 +10,4 @@ It is supposed to capture my mistakes as I go along this journey of learning Emb
 "emberfire": "2.0.1",
 "torii": "0.8.0"
 
-You can read more about it on my blog: https://notanothertutorial.wordpress.com/
+
